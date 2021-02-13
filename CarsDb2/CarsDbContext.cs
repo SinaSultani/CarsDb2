@@ -15,46 +15,7 @@ namespace CarsDb2
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<City>().HasData(
-                new City
-                {
-                    Id = 3,
-                    Name = "Malmö"
-                }
-                );
-            modelBuilder.Entity<Manufacturer>().HasData(
-                new Manufacturer
-                {
-                    Id = 1,
-                    Name = "Volvo"
-                },
-                new Manufacturer
-                {
-                    Id = 2,
-                    Name = "Tesla"
-                }
-                );
-            modelBuilder.Entity<CarDealer>().HasData(
-                new CarDealer
-                {
-                    Id = 1,
-                    Name = "Hedin Bil"
-                },
-                new CarDealer
-                {
-                    Id = 2,
-                    Name = "Bosses Bilar"
-                },
-                new CarDealer
-                {
-                    Id = 3,
-                    Name = "Bilia"
-                },
-                new CarDealer
-                {
-                    Id = 4,
-                    Name = "Platinum Cars"
-                });
+            modelBuilder.Seed();
         }
 
         public DbSet<City> Cities { get; set; }
