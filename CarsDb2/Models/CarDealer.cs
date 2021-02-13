@@ -14,10 +14,6 @@ namespace CarsDb2.Models
 
         public string Name { get; set; }
 
-
-        //Foreign Key
-        //public int CarId { get; set; }
-        //public virtual Car Car { get; set; }
         public virtual ICollection<Car> Cars { get; set; }
         public virtual ICollection<City> Cities { get; set; }
     }

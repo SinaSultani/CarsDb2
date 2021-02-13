@@ -15,15 +15,6 @@ namespace CarsDb2
     {
         public static void Main(string[] args)
         {
-            //var factory = new CarContextFactory();
-            //using var context = factory.CreateDbContext();
-
-
-            //var city = new City { Name = "Stockholm" };
-            //context.Cities.Add(city);
-            //context.SaveChanges();
-
-            //Console.WriteLine($"\tAdded ({JsonSerializer.Serialize(city)})");
 
             CreateHostBuilder(args).Build().Run();
         }

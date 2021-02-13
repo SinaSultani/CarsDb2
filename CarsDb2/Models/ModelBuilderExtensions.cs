@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CarsDb2.Models;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarsDb2.Models
@@ -66,6 +68,16 @@ namespace CarsDb2.Models
            }
            );
         }
+       
+       
+
         
+
+        //private static void DelteDataWithLinq()
+        //{
+        //    context.Remove(context.Authors.Single(a => a.AuthorId == 1));
+        //    context.SaveChanges();
+        //}
+
     }
 }
