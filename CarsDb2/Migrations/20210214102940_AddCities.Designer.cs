@@ -3,14 +3,16 @@ using CarsDb2;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CarsDb2.Migrations
 {
     [DbContext(typeof(CarsDbContext))]
-    partial class CarsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210214102940_AddCities")]
+    partial class AddCities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -160,8 +162,18 @@ namespace CarsDb2.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 3,
-                            Name = "Malmö"
+                            Id = 4,
+                            Name = "Halmstad"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Kiruna"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Norrköping"
                         });
                 });
 

@@ -11,6 +11,7 @@ namespace CarsDb2.Models
     {
 
         public int Id { get; set; }
+        [MaxLength(10)]
         public string Name { get; set; }
 
         public virtual ICollection<Car> Cars { get; set; }

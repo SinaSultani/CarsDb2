@@ -13,15 +13,9 @@ namespace CarsDb2
         public DbSet<Car> Cars { get; set; }
         public DbSet<Manufacturer> Manufacturers { get; set; }
 
-        public static void RetrieveAndDeleteACar()
-        {
-
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Seed();
-            RetrieveAndDeleteACar();
         }
         public DbSet<City> Cities { get; set; }
         public DbSet<CarDealer> CarDealers { get; set; }

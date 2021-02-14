@@ -12,7 +12,7 @@ namespace CarsDb2.Models
         public int Id { get; set; }
         [MaxLength(10)]
         public string Model { get; set; }
-        public string Motor { get; set; }
+        public string Motor { get; set; } 
         public string EngineType { get; set; }
         public int Year { get; set; }
         public double Price { get; set; }

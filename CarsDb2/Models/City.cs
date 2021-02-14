@@ -10,7 +10,7 @@ namespace CarsDb2.Models
     public class City
     {
         public int Id { get; set; }
-
+        [MaxLength(20)]
         public string Name { get; set; }
 
         public virtual ICollection<CarDealer> CarDealers { get; set; }
